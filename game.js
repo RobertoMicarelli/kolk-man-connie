@@ -515,7 +515,7 @@ function drawHUD(){
   // legend
   const legendEl = document.getElementById("legend");
   if(legendEl){
-    legendEl.innerHTML = ghostMeta.map(g=>`<span class="legend-item"><span class="legend-swatch" style="background:${g.color}"></span><span class="legend-name">${g.name}${g.key==='divy'?' — THE KOLBY GHOST':''}</span></span>`).join("");
+    legendEl.innerHTML = ghostMeta.map(g=>`<span class="legend-item"><span class="legend-swatch" style="background:${g.color}"></span><span class="legend-name">${g.name}</span></span>`).join("");
   }
   // Ghost legend
   const ghostLegend = document.getElementById("ghostLegend");
